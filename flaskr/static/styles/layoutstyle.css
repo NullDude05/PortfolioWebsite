@@ -1,0 +1,35 @@
+html, body {
+    background-color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+}
+
+h1, p {
+    color: black;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: #0c166f;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    width: 100%;
+    /* position: fixed; */
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+.navbar li a:hover {
+    background-color: #09115d;
+}

@@ -2,13 +2,20 @@
 <html>
     <head>
         {% block head %}
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='layoutstyle.css') }}">
-        <title>{{title}} - Josh's Webpage</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/layoutstyle.css') }}">
         {% endblock %}
+        <title>{{title}} - Josh's Webpage</title>
     </head>
 
     <body>
-        <div id="horizontalmenu"></div>
+        <div class="navbar">
+            <ul>
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Contact</a></li>
+                <li><a>Projects</a></li>
+            </ul>
+        </div>
         <div id="content">
             {% block content %}{% endblock %}
         </div>
